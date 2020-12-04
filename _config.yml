@@ -6,6 +6,7 @@ disqus_shortname: dotnetthoughts
 google_analytics: 'UA-12179122-1'
 google_site_verification: gfDtT8jd3OHpmGe2VJwYDE7G9-xwmpbQVVugKEU-Kp
 baseurl: "/"
+future: false
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
