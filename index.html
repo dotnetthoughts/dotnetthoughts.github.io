@@ -42,14 +42,14 @@ title: dotnetthoughts
 
 
 <nav class="blog-pagination">
-    {% if paginator.previous_page %}
-    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}">Previous</a>
-    {% else %}
-    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Previous</a>
-    {% endif %}
     {% if paginator.next_page  %}
-    <a class="btn btn-outline-primary" href="{{ paginator.next_page_path  }}">Next</a>
+    <a class="btn btn-outline-primary" href="{{ paginator.next_page_path  }}">Older</a>
     {% else %}
-    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Next</a>
+    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Older</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}">Newer</a>
+    {% else %}
+    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Newer</a>
     {% endif %}
 </nav>
