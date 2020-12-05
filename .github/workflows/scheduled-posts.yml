@@ -1,4 +1,4 @@
-name: Build every hour
+name: Build site automatically
 
 on:
   schedule:
