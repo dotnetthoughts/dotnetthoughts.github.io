@@ -90,7 +90,9 @@ Next I created a Release pipeline which take this artifacts and deploy it Azure 
 
 First step will deploy the `drop` folder to web app using Web Deploy. Second I am adding `Azure SQL Database deployment` task. In which I am configuring authentication mode which is SQL Server, username, password and database. And select Deploy type as `SQL Script File` and select the SQL Script file - `$(Build.SourcesDirectory)/SQL/tododbscript.sql`.
 
-You can configure the trigger to deploy it when a build completes or you can manually do it.
+You can configure the trigger to deploy it when a build completes or you can manually do it. Here is the Release pipeline completed.
+
+![Azure DevOps Release pipeline completed]({{ site.url }}/assets/images/2020/12/release_pipeline2.png)
 
 This way you can configure your application database deployment using Azure DevOps and Entity Framework Core migrations - you need to make sure you're committing the migration scripts to source control. Unlike running dotnet ef database update command - the script command won't create the Databases. You need to create an empty database and configure it in the SQL Task in release pipeline.
 
