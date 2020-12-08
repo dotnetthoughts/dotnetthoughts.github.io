@@ -47,6 +47,13 @@ layout: compress
         el.setAttribute("class", "img-fluid");
       }
     }
+    var tables = document.getElementsByTagName("table");
+    for (var i = 0; i < tables.length; i++) {
+      var el = tables[i];
+      if (!el.getAttribute("class")) {
+        el.setAttribute("class", "table table-bordered");
+      }
+    }
   </script>
   <script type="text/javascript">
     (function () {

@@ -42,7 +42,7 @@ You need to configure following values.
 | Append | Strict-Transport-Security   | max-age=31536000; includeSubDomains        |
 | Append | X-Xss-Protection   | 1; mode=block        |
 | Append | Referrer-Policy   | strict-origin        |
-| Append | Permissions-Policy   | accelerometer=(); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()        |{#rules .table .table-bordered}
+| Append | Permissions-Policy   | accelerometer=(); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()        |
 
 And here is my Azure CDN Rule engine with the completed configuration.
 
