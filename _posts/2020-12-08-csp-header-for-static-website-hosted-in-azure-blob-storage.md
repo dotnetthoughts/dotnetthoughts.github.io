@@ -28,7 +28,7 @@ Click on the `Add URL` option, which will display a configuration section like t
 
 ![Add Rule - Rule Engine]({{ site.url }}/assets/images/2020/12/ruleengine_addurl.png)
 
-Provide a name, click on the `Add Condition`, and choose `Request URL` option, this will show a condition section on the bottom, select `Any` operator - so this URL will be applied to all the incoming URLs. If you're using the `Global` you can directly add actions, you don't require any conditions. There is a limit of 5 actions, so if you need to add more than 5 actions you need to follow this method. Next you need to click on the `Add Action`, and select `Modify Response Header`. Similar to condition this will add one more section, in the section, choose Action as Append, set `X-Frame-Options` as HTTP Header name, and set `SAMEORIGIN` as the Http header value.
+Provide a name, click on the `Add Condition`, and choose `Request URL` option, this will show a condition section on the bottom, select `Any` operator - so this URL will be applied to all the incoming URLs. If you're using the `Global` you can directly add actions, you don't require any conditions. There is a limit of 5 actions, so if you need to add more than 5 actions you need to follow this method. Next you need to click on the `Add Action`, and select `Modify Response Header`. Similar to condition this will add one more section, in the section, choose Action as `Append`, set `X-Frame-Options` as HTTP Header name, and set `SAMEORIGIN` as the Http header value.
 
 You need to configure following values. 
 
@@ -52,6 +52,6 @@ Now we have completed the configuration, lets run the URL again in securityheade
 
 ![Security Headers Result A+]({{ site.url }}/assets/images/2020/12/securityheader_result_aplus.png)
 
-And we got an `A+`. This way you can make you application more secure without web.config or any other server side technologies. We can use Azure Function proxies to achieve the same results.
+And we got an `A+` as the result. Some security tools will show a warning if the response returns a Server header. We can remove that by adding one more action. In the action choose `Delete` instead of `Append` and in the `HTTP header name` option provide the `Server` as the value. Now if you check the server response header won't be there. This way you can make you application more secure without web.config or any other server side technologies. We can use Azure Function proxies to achieve the same results.
 
 Happy Programming :)
