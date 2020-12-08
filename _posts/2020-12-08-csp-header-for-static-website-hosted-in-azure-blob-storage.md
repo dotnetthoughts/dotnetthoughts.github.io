@@ -6,7 +6,7 @@ date: 2020-12-08 00:00:00
 categories: [Azure,Security]
 tags: [Azure,Security]
 author: "Anuraj"
-image: /assets/images/2020/12/azure_rules.png
+image: /assets/images/2020/12/securityheader_result_aplus.png
 ---
 This post is about configuring CSP Header for Static Website Hosted in Azure Blob Storage. If you're running a Single Page application, hosting it from Azure Blob service it easy and cost effective. Long back I wrote a blog post on how to do this - [Simple Static Websites using Azure Blob service](https://dotnetthoughts.net/simple-static-websites-using-azure-blob-service/). One of the challenge in this approach is configuring security headers. If you check your application with tools like [https://securityheaders.com](securityheaders.com), you will be getting a very low score, like `F`. 
 
