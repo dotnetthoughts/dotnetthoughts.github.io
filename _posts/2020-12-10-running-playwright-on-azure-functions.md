@@ -10,11 +10,24 @@ image: /assets/images/2020/12/playwright_config.png
 ---
 This post is about Running Playwright on Azure Functions and deploying it to Azure. Playwright is a Node.js library to automate Chromium, Firefox and WebKit with a single API. Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable and fast. Since it is a Node.js library I am creating this azure function in Javascript. This function will read a URL as input parameter and converts that URL into a PDF file. So first I am creating an Azure function with Javascript.
 
-I am creating the function using VSCode. I am created a function using Javascript and HttpTrigger. Next I am installing the Playwright package using the command - `npm install playwright`. this command installs Playwright and browser binaries for Chromium, Firefox and WebKit. 
+I am creating the function using VSCode. I am created a function using Javascript and HttpTrigger. Next I am installing the Playwright package using the command - `npm install playwright`. this command installs Playwright and browser binaries for Chromium, Firefox and WebKit. And I am installing `playwright-chromium` as well, so that I can access the library in the code.
 
 Here is my `package.json` file
 {% highlight Javascript %}
-
+{
+  "name": "url2pdf",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "playwright": "^1.6.2",
+    "playwright-chromium": "^1.6.2"
+  },
+  "devDependencies": {}
+}
 {% endhighlight %}
 
 Next modify the `index.js` file like this.
