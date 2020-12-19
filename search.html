@@ -21,7 +21,8 @@ permalink: /search/
                 return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
             }
         }
-    }
+    };
+
     var searchTerm = getQueryVariable('query');
     var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
@@ -31,6 +32,7 @@ permalink: /search/
     });
 
     if (searchTerm.length >= 1) {
+        document.getElementById('search-input').value = searchTerm;
         sjs.search(searchTerm);
     }
 </script>
