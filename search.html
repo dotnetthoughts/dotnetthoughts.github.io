@@ -30,8 +30,10 @@ permalink: /search/
         json: '/search.json',
         searchResultTemplate: '<a target="_blank" class="list-group-item list-group-item-action" href="{{ site.url }}{url}"><div class="d-flex justify-content-between"><h5 class="mb-1">{title}</h5></div><p class="mb-1">{subtitle}</p></a>'
     });
-    
+
     if (searchTerm.length >= 1) {
-        window.sjs.search(searchTerm.toString());
+        setTimeout(() => {
+            window.sjs.search(searchTerm.toString());
+        }, 1500);
     }
 </script>
