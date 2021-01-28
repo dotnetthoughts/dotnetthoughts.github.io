@@ -211,4 +211,6 @@ And here is the report displaying on ASP.NET Core MVC View.
 
 This way you can display the FastReport in ASP.NET Core MVC. You can configure which all button should be displayed in the toolbar. And you can play around the content source - instead of pushing the Categories collection, you can run query and push the output as a data source. You can also explore the FastReport Designer and design complex reports. You can download the FastReport Designer from [here](https://github.com/FastReports/FastReport/releases). And you can find more details about the FastReport open source blog posts [here](https://opensource.fast-report.com/)
 
+You can find source code for this article in [GitHub](https://github.com/anuraj/AspNetCoreSamples/tree/master/FastReportDemo).
+
 Happy Programming :)
