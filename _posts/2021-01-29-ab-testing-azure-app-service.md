@@ -6,7 +6,7 @@ date: 2021-01-29 00:00:00
 categories: [Azure,AppService,A/B Testing]
 tags: [Azure,AppService,A/B Testing]
 author: "Anuraj"
-image: /assets/images/2021/01/appservice_abtesting.png
+image: /assets/images/2021/01/appservice_abtesting_slots.png
 ---
 A/B Testing feature helps you to test new website content, processes, workflows, etc. by routing the traffic into multiple slots. At a very high level, you route your users into different two deployments of code and measure the success of each version of the site based on your requirements. Azure App Service helps us to set up it very quickly with the help of Deployment Slots.
 
@@ -24,11 +24,9 @@ It will take few seconds to upgrade SKU and once it is done, Deployment slot opt
 
 You can add slot by clicking on Add Slot button. I am adding a staging slot. Since I don't have a configuration, I am selecting `Do not clone Settings` option, if you have any configuration, like App Settings or Connection Strings, you can clone from other slots. The slot is also an Azure app service. Most of the App service features are available for App Service slots as well.
 
-Next I am creating an ASP.NET Core MVC app for deploying to this App Service slots. While creating the app service I choose the Runtime as .NET Core 3.1, you can run the following command to create an .NET Core 3.1 app - `dotnet new mvc --framework netcoreapp3.1 -o abtestingdemo`. Next I am deploying the app in Production Slot. I am using Visual Studio Code to deploy the app to the slot. 
-
 ![VS Code App Service Deployment]({{ site.url }}/assets/images/2021/01/vscode_app_service.png)
 
-Once successfully deployed you can browse the application and verify whether it is working or not. I am using Swap slot to deploy the  Next, you need to modify code and deploy it to Staging slot. I am modified the Index view in the application like this and I am deploying it to staging slot.
+Next I am creating an ASP.NET Core MVC app for deploying to this App Service slots. While creating the app service I choose the Runtime as .NET Core 3.1, you can run the following command to create an .NET Core 3.1 app - `dotnet new mvc --framework netcoreapp3.1 -o abtestingdemo`. Next I am deploying the app in Production Slot. I am using Visual Studio Code to deploy the app to the slot.  Once successfully deployed you can browse the application and verify whether it is working or not. Next, you need to modify code and deploy it to Staging slot. I am modified the Index view in the application like this and I am deploying it to staging slot.
 
 {% highlight HTML %}
 <div class="text-center">
