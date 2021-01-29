@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A/B Testing with App Service"
+title: "A/B Testing with Azure App Service"
 subtitle: "A/B Testing feature helps you to test new website content, processes, workflows, etc. by routing the traffic into multiple slots. At a very high level, you route your users into different two deployments of code and measure the success of each version of the site based on your requirements. Azure App Service helps us to set up it very quickly with the help of Deployment Slots."
 date: 2021-01-29 00:00:00
 categories: [Azure,AppService,A/B Testing]
