@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How to use FastReport Open Source in ASP.NET Core Web application"
-subtitle: "This post is about integrating FastReport Open Source in ASP.NET Core Web application. FastReport open source is a replacement for Crystal Reports or any other reporting tool."
+title: "How to use FastReport Open Source in ASP.NET Core"
+subtitle: "This post is about integrating FastReport Open Source in ASP.NET Core MVC application. FastReport open source is a replacement for Crystal Reports or any other reporting tool."
 date: 2021-01-28 00:00:00
 categories: [AspNetCore,Reporting,FastReport]
 tags: [AspNetCore,Reporting,FastReport]
