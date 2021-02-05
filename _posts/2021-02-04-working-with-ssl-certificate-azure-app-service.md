@@ -63,4 +63,10 @@ It is recommended to turn on the `HTTPS Only` option. So that your app service a
 
 This way you can create SSL certificate requests, create and use SSL certificate in Azure App Service. Once it is expired, you can execute the same procedure and use the latest certificate. 
 
+### Reference Links
+
+1. [Use a TLS/SSL certificate in your code in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate-in-code?WT.mc_id=AZ-MVP-5002040)
+2. [Add a TLS/SSL certificate in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?WT.mc_id=AZ-MVP-5002040)
+3. [Secure a custom DNS name with a TLS/SSL binding in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-ssl-bindings?WT.mc_id=AZ-MVP-5002040)
+
 Happy Programming :)
