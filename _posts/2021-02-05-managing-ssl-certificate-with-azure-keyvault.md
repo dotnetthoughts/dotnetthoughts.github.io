@@ -6,7 +6,7 @@ date: 2021-02-05 00:00:00
 categories: [Azure,AppService,Azure KeyVault]
 tags: [Azure,AppService,Azure KeyVault]
 author: "Anuraj"
-image: /assets/images/2021/02/azure_keyvault.png
+image: /assets/images/2021/02/create_azure_keyvault.png
 ---
 In my last [blog post](https://dotnetthoughts.net/working-with-ssl-certificate-azure-app-service/) I wrote about working with SSL certificate in Azure App Service. In this article I will explain how to manage Azure App Service SSL certificates with Azure Key Vault Service. If you're running SAAS applications on Azure App Service with custom domains and SSL certificates it is quite complicated. Here is a screenshot of an App Service running a SAAS app with custom domain and SSL certificates.
 
