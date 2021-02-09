@@ -95,19 +95,17 @@ And here is the HTML part.
 And here is the JSRender template
 
 {% highlight HTML %}
+{% raw %}
 <script type="text/x-jsrender" id="posts">
     <div id="{{:Id}}" class="post">
-        
-
-## {{:Title}}
-
-
+        ## {{:Title}}
         <hr />
         <div>
             {{:Content}}
         </div>
     </div>
 </script>
+{% endraw %}
 {% endhighlight %}
 
 For identifying the Page, I am using the Div Id. If you don't want that approach you can create a hidden variable and can do the same.
