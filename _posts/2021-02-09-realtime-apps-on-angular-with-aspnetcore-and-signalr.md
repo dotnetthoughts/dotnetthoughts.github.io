@@ -74,8 +74,7 @@ import * as signalR from "@microsoft/signalr";
 
 @Component({
   selector: 'app-root',
-  template: `
-  `,
+  template: '',
   styles: []
 })
 export class AppComponent {
