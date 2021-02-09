@@ -13,10 +13,12 @@ This article shows you how to monitor Azure WebJobs using Azure Application Insi
 So first you need to create a MultiStep test. You can do it with Visual Studio Enterprise edition. You need to create a `Web Performance and Load Test Project`. Once it is created, it will create a `webtest` file. You can right click on the node and choose the Add Request option. In this you need to provide the Kudu endpoint of the Web Job. You can configure the URL property with the Kudu endpoint URL. This is the URL format - `https://your_app_service.scm.azurewebsites.net/api/triggeredwebjobs/your_web_job_name`. You need to replace the app service name and web job name you created. This is an authenticated endpoint using Basic Authentication. So you need to add a Header. You can again right click on the Request and choose the option Add Header. This will add a Header option, you need to select the `Authorization` for the Name property and Value you need to configure the token. To get the token download the Publish profile from App Service. It is an XML file. You need to find the values parameters - `userName` and `userPWD`. And execute the following powershell code.
 
 {% highlight PowerShell %}
+
 $userName = "`$app-service-webjobs-demo"
 $userPWD = "HkKy9zfyb1S9ueZx2kJPgjqPGDJ0KqmdWFgT5fHE2CKjj5legfaLLjz9jboo"
 $authHeader = "Basic {0}" -f [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $userName, $userPWD)))
 Write-Host $authHeader
+
 {% endhighlight %}
 
 If you notice, you will be able to find one extra character ( \` ) in the username variable. It is required to escape the `$` symbol in powershell. Once you execute this code with the variables from your publishing profile you will get a token. Use this token in the Header parameter value.
