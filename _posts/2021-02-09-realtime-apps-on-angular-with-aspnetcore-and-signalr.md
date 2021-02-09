@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Building Realtime applications on Angular with ASP.NET Core and SignalR"
-subtitle: "This article shows you how to build realtime applications on Angular with ASP.NET Core and SignalR."
+title: "Building Realtime applications on Angular with ASPNET Core and SignalR"
+subtitle: "This article shows you how to build realtime applications on Angular with ASPNET Core and SignalR."
 date: 2021-02-09 00:00:00
 categories: [AspNetCore,Angular,SignalR]
 tags: [AspNetCore,Angular,SignalR]
