@@ -10,7 +10,7 @@ image: /assets/images/2021/01/craftsman_command.png
 ---
 This post is about scaffolding an entire .NET 5 Web API with a simple yaml or json file using Wrapt, which helps you can focus on the high value features in your web app. Recently I came across this tool which helps you to scaffold a Web API application in Clean architecture with Open API documentation, unit tests and integration tests by providing a YAML or JSON file.
 
-To get started you need to install a project template and a dotnet tool. So first you need to run the command - ` dotnet new -i Foundation.Api` - this command will install the Foundation API project template. Next you need to install the `craftsman` tool which helps you to scaffold the project. You can install it using `dotnet tool install -g craftsman` command. Once installation is successful, you can run the `craftsman` command which will display an output like this.
+To get started you need to install a project template and a dotnet tool. So first you need to run the command - `dotnet new -i Foundation.Api` - this command will install the Foundation API project template. Next you need to install the `craftsman` tool which helps you to scaffold the project. You can install it using `dotnet tool install -g craftsman` command. Once installation is successful, you can run the `craftsman` command which will display an output like this.
 
 ![Craftsman command]({{ site.url }}/assets/images/2021/01/craftsman_command.png)
 
