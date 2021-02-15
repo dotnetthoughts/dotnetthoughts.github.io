@@ -59,7 +59,7 @@ The YAML file is simple and straight forward. Here is the detailed explanation o
 4. Environments - This element helps you to configure environment configuration - which helps you to configure the connection string and associated variables for a certain environment.
 4. SwaggerConfig - This element helps you to build the Open API documentation for the Web API.
 
-You can copy / paste the YAML file and save it as `todo-api.yaml`. Next let's build the web api. You can run the command - ` craftsman new:api .\todo-api.yaml`, which will parse the YAML file and scaffold the solution and projects.
+You can copy / paste the YAML file and save it as `todo-api.yaml`. Next let's build the web api. You can run the command - `craftsman new:api .\todo-api.yaml`, which will parse the YAML file and scaffold the solution and projects.
 
 ![Craftsman New API]({{ site.url }}/assets/images/2021/01/craftsman_generate_api.png)
 
