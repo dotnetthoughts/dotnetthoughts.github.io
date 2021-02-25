@@ -150,7 +150,7 @@ In the Dockerfile you're downloading the `punkt` resource to the `/app/nltk` dir
 
 Once it is completed, you can check the Docker Hub and verify it is available. To deploy the image to App Service, you can use the VS Code Docker extension. You can right click on the image tag and choose the `Deploy Image to Azure App Service` option.
 
-![Deploy the Web App to Azure App Service]({{ site.url }}/assets/images/2021/02/deploy_image_to_webapp.png)
+![Deploy the Web App to Azure App Service]({{ site.url }}/assets/images/2021/02/deploy_to_webapp.png)
 
 It will prompt for the some configuration values - similar to what you configure when creating an Azure App Service. Once it is done, VS Code will provision the app service and deploy the container image to Azure app service.
 
