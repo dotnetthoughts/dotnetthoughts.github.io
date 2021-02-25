@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "How to create social media posts from long form written content using Python"
-subtitle: "This article discuss about generic social media posts from long form written content using Python."
+title: "How to create social media posts from long form content using Python"
+subtitle: "This article discuss about generating social media posts from long form content using Python."
 date: 2021-02-24 00:00:00
 categories: [Python,Docker,Azure]
 tags: [Python,Docker,Azure]
 author: "Anuraj"
 image: /assets/images/2021/02/docker_hub_display.png
 ---
-This article discuss about generic social media posts from long form written content using Python. Most of the companies create technical blogs, white papers, articles as part of their marketing initiative. And they will push these content to social media with a summary, which helps them to bring customers to their websites. And most of the articles or blogs repurposed. This solution will help you to create such social media posts from the blog posts or articles. In this post you will learn how to implement a similar tool using Python and Flask, and hosting it on Azure App Service. You will also learn to use Azure Cognitive Services instead of using nltk package.
+This article discuss about generating social media posts from long form written content using Python. Most of the companies create technical blogs, white papers, articles as part of their marketing initiative. And they will push these content to social media with a summary, which helps them to bring customers to their websites. And most of the articles or blogs repurposed. This solution will help you to create such social media posts from the blog posts or articles. In this post you will learn how to implement a solution using Python and Flask, and hosting it on Azure App Service. You will also learn to use Azure Cognitive Services instead of using nltk package.
 
 ### How it works?
 
