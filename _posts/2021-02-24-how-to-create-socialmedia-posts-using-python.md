@@ -78,7 +78,7 @@ This implementation got one route with different HTTP methods. When a user brows
 
 In the next section, you will publish the solution to Azure.
 
-### Publish to Azure
+### Publishing to Azure
 
 To publish the solution to Azure, let's convert the solution into a docker image and publish it. To do this you can use VSCode Docker extension and add the Dockerfile. Once you add the Dockerfile, you will get a `requirements.txt` file with `flask` and `gunicorn` packages. You need to add the packages you installed to this. Modify the `requirements.txt` file like the following.
 
