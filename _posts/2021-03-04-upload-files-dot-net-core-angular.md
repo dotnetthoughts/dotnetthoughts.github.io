@@ -173,6 +173,45 @@ onFileChanged(event) {
 }
 {% endhighlight %}
 
+And here is the HTML code for the Form
+
+{% highlight HTML %}
+
+<form class="needs-validation" novalidate [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" class="form-control" id="name"
+           [ngClass]="{ 'is-invalid': form.name.invalid && (form.name.dirty || form.name.touched) }">
+    <div class="invalid-feedback" *ngIf="form.name.touched && form.name.invalid">
+      <div *ngIf="form.name.errors.required">Name is required.</div>
+      <div *ngIf="form.name.errors.minlength">Name should be 2 character.</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" formControlName="email" class="form-control" id="email"
+           [ngClass]="{ 'is-invalid': form.email.invalid && (form.email.dirty || form.email.touched) }">
+    <div class="invalid-feedback" *ngIf="form.email.touched && form.email.invalid">
+      <div *ngIf="form.email.errors.required">Email is required.</div>
+      <div *ngIf="form.email.errors.email">Invalid email.</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="picture">Picture</label>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile"
+             (change)="onFileChanged($event)" accept=".jpg,.png,.gif,.pdf,.xls,.xlsx,.doc,.docx,.ppt,.pptx">
+      <label class="custom-file-label" #labelImport for="customFile">Choose file</label>
+    </div>
+    <div class="invalid-feedback" *ngIf="form.picture.touched && form.picture.invalid">
+      <div *ngIf="form.picture.errors.required">Picture is required.</div>
+    </div>
+  </div>
+  <input type="submit" value="Submit" [disabled]="profileForm.invalid" class="btn btn-primary" />
+</form>
+{% endhighlight %}
+
+
 Here is the screenshot of the application running.
 
 ![Angular File Upload]({{ site.url }}/assets/images/2021/03/angular_file_upload.png)
